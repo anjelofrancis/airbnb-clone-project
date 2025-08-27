@@ -33,3 +33,19 @@ The Airbnb Clone Project is a full-stack web application designed to replicate t
 - ***Redis***: A fast in-memory data store used for caching frequently accessed data and managing user sessions to reduce database load.
 - ***Docker***: A containerization tool that ensures consistent development, testing, and deployment environments across different systems.
 - ***GitHub Actions***: Automated pipelines (e.g., using GitHub Actions) for continuous integration and deployment, enabling efficient testing and rollout of code changes.
+
+
+## **Database Design**
+
+The database is designed to support the core functionalities of the Airbnb Clone Project using PostgreSQL. Below are the key entities, their important fields, and their relationships.
+
+### ***Key Entities**
+
+- **Users**
+    - *Fields*
+        - `user-id`: Unique identifier for each user (Primary Key).
+        - `email`: User's email address for authentication and communication.
+        - `name`: Full name of the user for profile display.
+        - `password_hash`: Securely hashed password for user authentication.
+        - `created_at`: Timestamp of when the user account was created.
+    - *Description* 
