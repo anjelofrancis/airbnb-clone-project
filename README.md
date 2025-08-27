@@ -15,21 +15,21 @@ The Airbnb Clone Project is a full-stack web application designed to replicate t
 - ***Data Optimisation***: Ensure efficient data retrieval and storage through database optimisations.
 
 
-## **Technology Stack**
-
-- ***Django***: A high-level Python web framework for building RESTful APIs.
-- ***Django REST Framework***: Tools for creating and managing RESTful APIs.
-- ***PostgreSQL***: A relational database for storing application data.
-- ***GraphQL***: Enables flexible and efficient data querying.
-- ***Celery***: Handles asynchronous tasks like notifications and payment processing.
-- ***Redis***: Used for caching and session management.
-- ***Docker***: Ensures consistent development and deployment environments.
-- ***GitHub Actions***: Automates testing and deployment through CI/CD pipelines.
-
-
 ## **Team Roles**
 
 - ***Backend Developer***: Designs and implements API endpoints, develops business logic, and integrates with the database to support user, property, booking, payment, and review functionalities. Ensures the backend is secure, scalable, and maintainable.
-- ***Database Administrator***: Designs and optimizes the PostgreSQL database schema, implements indexing strategies, and manages data integrity. Focuses on performance tuning and scalability to handle large datasets efficiently.
+- ***Database Administrator***: Designs and optimises the PostgreSQL database schema, implements indexing strategies, and manages data integrity. Focuses on performance tuning and scalability to efficiently handle large datasets.
 - ***DevOps Engineer***: Configures and manages deployment pipelines using Docker and CI/CD tools like GitHub Actions. Monitors backend services, ensures scalability, and maintains a consistent development and production environment.
 - ***QA Engineer***: Develops and executes test plans to validate backend functionalities, including API endpoints and database operations. Ensures the system meets quality standards through rigorous testing and bug identification.
+
+
+## **Technology Stack**
+
+- ***Django***: A high-level Python web framework used for building the RESTful API, providing a robust structure for handling requests, routing, and business logic.
+- ***Django REST Framework***: A toolkit for creating and managing RESTful APIs, enabling CRUD operations for user, property, booking, and review data.
+- ***PostgreSQL***: A powerful relational database used for storing and managing application data, such as user profiles, property listings, and booking records.
+- ***GraphQL***: A query language that allows flexible and efficient data retrieval, enabling clients to request exactly the data they need from the backend.
+- ***Celery***: A distributed task queue for handling asynchronous tasks, such as sending notifications or processing payments, to improve performance and user experience.
+- ***Redis***: A fast in-memory data store used for caching frequently accessed data and managing user sessions to reduce database load.
+- ***Docker***: A containerization tool that ensures consistent development, testing, and deployment environments across different systems.
+- ***GitHub Actions***: Automated pipelines (e.g., using GitHub Actions) for continuous integration and deployment, enabling efficient testing and rollout of code changes.
