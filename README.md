@@ -5,6 +5,7 @@
 The Airbnb Clone Project is a full-stack web application designed to replicate the core functionalities of the Airbnb platform. It provides a robust and scalable backend system to manage user interactions, property listings, bookings, payments, and reviews, ensuring a seamless experience for both guests and hosts. This project serves as a practical exercise in backend development, database design, API creation, and modern software development practices.
 
 
+
 ## **Project Goals**
 
 - ***User Management***: Implement secure user registration, authentication, and profile management.
@@ -15,12 +16,14 @@ The Airbnb Clone Project is a full-stack web application designed to replicate t
 - ***Data Optimisation***: Ensure efficient data retrieval and storage through database optimisations.
 
 
+
 ## **Team Roles**
 
 - ***Backend Developer***: Designs and implements API endpoints, develops business logic, and integrates with the database to support user, property, booking, payment, and review functionalities. Ensures the backend is secure, scalable, and maintainable.
 - ***Database Administrator***: Designs and optimises the PostgreSQL database schema, implements indexing strategies, and manages data integrity. Focuses on performance tuning and scalability to efficiently handle large datasets.
 - ***DevOps Engineer***: Configures and manages deployment pipelines using Docker and CI/CD tools like GitHub Actions. Monitors backend services, ensures scalability, and maintains a consistent development and production environment.
 - ***QA Engineer***: Develops and executes test plans to validate backend functionalities, including API endpoints and database operations. Ensures the system meets quality standards through rigorous testing and bug identification.
+
 
 
 ## **Technology Stack**
@@ -33,6 +36,7 @@ The Airbnb Clone Project is a full-stack web application designed to replicate t
 - ***Redis***: A fast in-memory data store used for caching frequently accessed data and managing user sessions to reduce database load.
 - ***Docker***: A containerization tool that ensures consistent development, testing, and deployment environments across different systems.
 - ***GitHub Actions***: Automated pipelines (e.g., using GitHub Actions) for continuous integration and deployment, enabling efficient testing and rollout of code changes.
+
 
 
 ## **Database Design**
@@ -90,6 +94,7 @@ The database is designed to support the core functionalities of the Airbnb Clone
 - Bookings to Payments: Each booking can have one associated payment, and each payment is linked to a single booking (One-to-One).
 - Properties to Reviews: A property can have multiple reviews, but each review is associated with only one property (One-to-Many).
 - Users to Reviews: A user can write multiple reviews, but each review is written by only one user (One-to-Many).
+
 
 
 ## **Feature Breakdown**
