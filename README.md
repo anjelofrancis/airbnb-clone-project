@@ -91,3 +91,11 @@ The database is designed to support the core functionalities of the Airbnb Clone
 - Properties to Reviews: A property can have multiple reviews, but each review is associated with only one property (One-to-Many).
 - Users to Reviews: A user can write multiple reviews, but each review is written by only one user (One-to-Many).
 
+
+## **Feature Breakdown**
+- User Management: Enables secure registration, authentication, and profile management for users. This feature ensures that guests and hosts can create accounts, log in securely, and update their personal information, forming the foundation for user interactions in the platform.
+- Property Management: Allows hosts to create, update, and delete property listings with details like location and price. This feature empowers hosts to manage their offerings, making properties available for guests to browse and book.
+- Booking System: Facilitates the reservation of properties by users, including managing check-in and check-out dates. It ensures a smooth process for guests to secure accommodations and for hosts to track their bookings.
+- Payment Processing: Handles secure payment transactions for bookings, recording payment details and status. This feature ensures seamless and trustworthy financial interactions between guests and the platform.
+- Review System: Enables users to post ratings and comments for properties they’ve stayed at. This fosters trust and transparency by allowing guests to share feedback and helping others make informed booking decisions.
+- Data Optimization: Implements indexing and caching strategies to enhance database performance. This ensures fast data retrieval and a responsive user experience, even with large datasets.
