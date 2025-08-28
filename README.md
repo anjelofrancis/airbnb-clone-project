@@ -39,7 +39,7 @@ The Airbnb Clone Project is a full-stack web application designed to replicate t
 
 The database is designed to support the core functionalities of the Airbnb Clone Project using PostgreSQL. Below are the key entities, their important fields, and their relationships.
 
-### ***Key Entities**
+### ***Key Entities***
 
 - **Users**
     - *Fields*
@@ -48,4 +48,46 @@ The database is designed to support the core functionalities of the Airbnb Clone
         - `name`: Full name of the user for profile display.
         - `password_hash`: Securely hashed password for user authentication.
         - `created_at`: Timestamp of when the user account was created.
-    - *Description* 
+    - *Description* - Stores details of properties available for booking.
+
+- **Properties**
+    - *Fields*
+        - `property_id`: Unique identifier for each property (Primary Key).
+        - `host_id`: References the user who owns the property (Foreign Key to Users).
+        - `title`: Descriptive title of the property listing.
+        - `location`: Address or coordinates of the property.
+        - `price_per_night`: Cost of renting the property per night.
+    - *Description* - Stores details of properties available for booking.
+- **Bookings**
+    - *Fields*
+        - `booking_id`: Unique identifier for each booking (Primary Key).
+        - `property_id`: References the booked property (Foreign Key to Properties).
+        - `user_id`: References the user making the booking (Foreign Key to Users).
+        - `check_in_date`: Start date of the booking.
+        - `check_out_date`: End date of the booking.
+    - *Description* - Manages reservation details for properties.
+- **Payments**
+    - *Fields*
+        - `payment_id`: Unique identifier for each payment (Primary Key).
+        - `booking_id`: References the associated booking (Foreign Key to Bookings).
+        - `amount`: Total payment amount for the booking.
+        - `payment_status`: Status of the payment (e.g., pending, completed, failed).
+        - `created_at`: Timestamp of when the payment was processed.
+    - *Description* - Tracks payment transactions related to bookings.
+- **Reviews**
+    - *Fields*
+        - `review_id`: Unique identifier for each review (Primary Key).
+        - `property_id`: References the reviewed property (Foreign Key to Properties).
+        - `user_id`: References the user who wrote the review (Foreign Key to Users).
+        - `rating`: Numerical rating (e.g., 1-5) for the property.
+        - `comment`: Textual feedback about the property.
+    - *Description* - Stores user reviews and ratings for properties.
+
+### **Entity Relationships**
+- Users to Properties: A user (host) can own multiple properties, but each property is associated with only one host (One-to-Many).
+- Users to Bookings: A user (guest) can make multiple bookings, but each booking is made by only one user (One-to-Many).
+- Properties to Bookings: A property can have multiple bookings, but each booking is associated with only one property (One-to-Many).
+- Bookings to Payments: Each booking can have one associated payment, and each payment is linked to a single booking (One-to-One).
+- Properties to Reviews: A property can have multiple reviews, but each review is associated with only one property (One-to-Many).
+- Users to Reviews: A user can write multiple reviews, but each review is written by only one user (One-to-Many).
+
